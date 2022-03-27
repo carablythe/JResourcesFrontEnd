@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router';
-import AddResource from '../components/AddResource'
-import EditResource from '../components/EditResource'
+// import AddResource from '../components/AddResource'
+// import EditResource from '../components/EditResource'
 
 
 const Home = () => {
@@ -21,33 +20,33 @@ const Home = () => {
     }
 
 
-  const handleCreateResource = (addResource) => {
-    axios
-      .post('https://japanresources.herokuapp.com/api/resources', addResource)
-      .then((response) => {
-        console.log(response)
-        getResources()
-       })
-    }
-
-
-  const handleUpdateResource = (editResource) => {
-    console.log(editResource)
-    axios
-      .put('https://japanresources.herokuapp.com/api/resources/' + editResource.id, editResource)
-      .then((response) => {
-        getResources()
-      })
-    }
-
-
-  const handleDeleteResource = (event) => {
-    axios
-      .delete('https://japanresources.herokuapp.com/api/resources/' + event.target.value)
-      .then((response) => {
-        getResources()
-      })
-    }
+  // const handleCreateResource = (addResource) => {
+  //   axios
+  //     .post('https://japanresources.herokuapp.com/api/resources', addResource)
+  //     .then((response) => {
+  //       console.log(response)
+  //       getResources()
+  //      })
+  //   }
+  //
+  //
+  // const handleUpdateResource = (editResource) => {
+  //   console.log(editResource)
+  //   axios
+  //     .put('https://japanresources.herokuapp.com/api/resources/' + editResource.id, editResource)
+  //     .then((response) => {
+  //       getResources()
+  //     })
+  //   }
+  //
+  //
+  // const handleDeleteResource = (event) => {
+  //   axios
+  //     .delete('https://japanresources.herokuapp.com/api/resources/' + event.target.value)
+  //     .then((response) => {
+  //       getResources()
+  //     })
+  //   }
 
 
   useEffect(() => {

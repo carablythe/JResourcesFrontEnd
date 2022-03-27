@@ -1,8 +1,6 @@
 import {useState} from 'react'
-import { useParams } from 'react-router'
 
 const Navbar = () => {
-  const [revealNav, setRevealNav] = useState(false)
 
   return (
       <>
