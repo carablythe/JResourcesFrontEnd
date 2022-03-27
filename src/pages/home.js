@@ -3,11 +3,11 @@ import axios from 'axios'
 import { useParams } from 'react-router';
 import AddResource from '../components/AddResource'
 import EditResource from '../components/EditResource'
-import Navbar from '../components/Navbar'
 
 
-const Home = (props) => {
+const Home = () => {
   const [resources, setResources] = useState([])
+  const [query, setQuery] = useState("")
 
 
   const getResources = () => {
@@ -63,36 +63,34 @@ const Home = (props) => {
           <p>I hope the resources you find on this site are informative and allow for smoother transitions and ans easier time navigating through life here.</p>
           <p>-Cara</p>
         </div>
-      <div className="resources">
-        {resources.filter((resource) => {
-            if (resource.topic.includes(props.query)) {
-              return resource;
-            } else if (
-              resource.topic.toLowerCase().includes(props.query.toLowerCase()))
-            {
-              return resource;
-            }
-            else if (
-              resource.category.includes(props.query))
-            {
-              return resource;
-            }
-            else if (
-              resource.category.toLowerCase().includes(props.query.toLowerCase()))
-            {
-              return resource;
-            }
-            else if (
-              resource.subcategory.includes(props.query))
-            {
-              return resource;
-            }
-            else if (
-              resource.subcategory.toLowerCase().includes(props.query.toLowerCase()))
-            {
-              return resource;
-            }
-          }).map((resource => {
+
+        <div className="navList">Search Topic:
+        <input placeholder="Enter Query" className="searchBar"
+                  onChange={event => setQuery(event.target.value)} />
+        </div>
+
+        <div className="resources">
+          {resources.filter((resource) => {
+              if (resource.topic.includes(query))   {
+                  return resource;
+                }
+              else if (resource.topic.toLowerCase().includes(query.toLowerCase()))  {
+                  return resource;
+                }
+              else if  (resource.category.includes(query))  {
+                  return resource;
+                }
+              else if  (resource.category.toLowerCase().includes(query.toLowerCase()))  {
+                  return resource;
+                }
+              else if  (resource.subcategory.includes(query))  {
+                  return resource;
+                }
+              else if (resource.subcategory.toLowerCase().includes(query.toLowerCase()))
+              {
+                return resource;
+              }
+            }).map((resource => {
           return (
             <div className="resource" key={resource.id}>
             <h4>Topic: {resource.topic}</h4>
@@ -102,12 +100,26 @@ const Home = (props) => {
             <h5>Description: {resource.description}</h5>
             </div>
              )
-          }))
-        }
-      </div>
-      <AddResource handleCreate={handleCreateResource} />
+          }))}
+        </div>
+          <AddResource handleCreate={handleCreateResource} />
+
     </>
   )
 }
 
 export default Home
+
+// might not use:
+//
+// .map((resource => {
+// return (
+//   <div className="resource" key={resource.id}>
+//   <h4>Topic: {resource.topic}</h4>
+//   <h5>Category: {resource.category}</h5>
+//   <h5>Subcategory: {resource.subcategory}</h5>
+//   <h5>Link/URL: {resource.URL}</h5>
+//   <h5>Description: {resource.description}</h5>
+//   </div>
+//    )
+// }))
