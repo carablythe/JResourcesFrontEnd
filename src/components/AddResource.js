@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 const AddResource = (props) => {
   let emptyResource = { topic: '', category: '', subcategory: '', URL: '', description: '', }

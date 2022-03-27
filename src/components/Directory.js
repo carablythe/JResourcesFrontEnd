@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
 const Directory = () => {
-    const [revealNav, setRevealNav] = useState(false)
+    // const [revealNav, setRevealNav] = useState(false)
 
 
     return (
