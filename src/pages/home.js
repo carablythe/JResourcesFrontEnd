@@ -89,6 +89,7 @@ const Home = () => {
               {
                 return resource;
               }
+              else {return null;}
             }).map((resource => {
           return (
             <div className="resource" key={resource.id}>
