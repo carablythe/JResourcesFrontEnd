@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-// import AddResource from '../components/AddResource'
+import AddResource from '../components/AddResource'
 // import EditResource from '../components/EditResource'
 
 
@@ -20,15 +20,15 @@ const Home = () => {
     }
 
 
-  // const handleCreateResource = (addResource) => {
-  //   axios
-  //     .post('https://japanresources.herokuapp.com/api/resources', addResource)
-  //     .then((response) => {
-  //       console.log(response)
-  //       getResources()
-  //      })
-  //   }
-  //
+  const handleCreateResource = (addResource) => {
+    axios
+      .post('https://japanresources.herokuapp.com/api/resources', addResource)
+      .then((response) => {
+        console.log(response)
+        getResources()
+       })
+    }
+
   //
   // const handleUpdateResource = (editResource) => {
   //   console.log(editResource)
