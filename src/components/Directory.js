@@ -1,16 +1,46 @@
 import React from 'react'
 
 const Directory = () => {
-    // const [revealNav, setRevealNav] = useState(false)
+    // repeat below for each subcategory and then question? it with the filter below
+  const [showSubcategory, setShowSubcategory] = useState(false);
+
 
 
     return (
         <>
           <aside>
-            <ul className="dropdown">
-                      <li className="navBar drop">Immigration
-                        <ul className="dropUl">
-                          <li className="dropLi">Visa Type:</li>
+                              <div className='whichToShow'>
+                                  { showSubcategory ? (
+                                      <>
+                                          {resources.filter((resource, index) => {
+                                             if (resource.subcategory.includes('')) {
+                                              return product;
+                                            } else if (
+                                              product.category.includes('')
+                                            ){
+                                              return product;
+                                            }
+                                            }).map((resource, index) => {
+                                              return (
+                                              <div className="resource" key={resource.id}>
+                                              <h4>Topic: {resource.topic}</h4>
+                                              <h5>Category: {resource.category}</h5>
+                                              <h5>Subcategory: {resource.subcategory}</h5>
+                                              <h5>Link/URL: {resource.URL}</h5>
+                                              <h5>Description: {resource.description}</h5>
+                                              </div>
+                                               )
+                                              }))}
+                                              </div>
+                                     ): null
+                                   }
+                             </div>
+
+
+           <ul className="dropdown">
+            <li className="navBar drop">Immigration
+                <ul className="dropUl">
+                         <li className="dropLi">Visa Type:</li>
                             <ul className="dropUlUl">
                               <li className="dropLiLi">Work</li>
                               <li className="dropLiLi">Student</li>
@@ -44,7 +74,6 @@ const Directory = () => {
                           <li className="dropLi">Other Info  </li>
                         </ul>
                       </li>
-
               </ul>
           </aside>
         </>
