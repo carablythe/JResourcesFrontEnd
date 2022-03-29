@@ -18,7 +18,6 @@ const Forum = () => {
     }
 
 
-
   const handleCreateQuestion = (addQuestion) => {
     axios
       .post('https://japanresources.herokuapp.com/api/forum', addQuestion)

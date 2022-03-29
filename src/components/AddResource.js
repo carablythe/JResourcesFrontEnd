@@ -16,8 +16,6 @@ const AddResource = (props) => {
 
   return (
     <>
-    <details>
-    <summary>Click Here to Add a Resource Under Category: {resource.subcategory}, Subcategory:{resource.subcategory} </summary>
       <form onSubmit={handleSubmit}>
         <h4><em>Keep in mind this site is for information purposes only, so please try to share mainly fact-based resources.</em></h4>
         <label htmlFor="topic">Topic:</label>
@@ -37,7 +35,6 @@ const AddResource = (props) => {
           <br />
         <input type="submit"/>
       </form>
-      </details>
     </>
   )
 }
