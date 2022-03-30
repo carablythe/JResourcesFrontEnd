@@ -32,6 +32,7 @@ const Directory = () => {
                   if (resource.category.includes('Immigration')) {
                   return resource;
                   }
+                  else {return null}
                   }).map((resource, index) => {
                   return (
                    <ul className="dropDownSubcategory" >
@@ -61,6 +62,7 @@ const Directory = () => {
                       if (resource.category.includes('Employ')) {
                       return resource;
                       }
+                      else {return null}
                       }).map((resource, index) => {
                       return (
                         <ul className="dropDownSubcategory" >
@@ -91,6 +93,7 @@ const Directory = () => {
                               if (resource.category.includes('Housing')) {
                               return resource;
                               }
+                              else {return null}
                               }).map((resource, index) => {
                               return (
                                 <ul className="dropDownSubcategory" >
@@ -120,6 +123,7 @@ const Directory = () => {
                                if (resource.category.includes('Tax')) {
                                return resource;
                                }
+                              else {return null}
                                }).map((resource, index) => {
                                return (
                                  <ul className="dropDownSubcategory" >
@@ -149,6 +153,7 @@ const Directory = () => {
                                 if (resource.category.includes('Medical')) {
                                 return resource;
                                 }
+                                else {return null}
                                 }).map((resource, index) => {
                                 return (
                                   <ul className="dropDownSubcategory" >
@@ -178,6 +183,7 @@ const Directory = () => {
                                  if (resource.category.includes('Legal')) {
                                  return resource;
                                  }
+                                  else {return null}
                                  }).map((resource, index) => {
                                  return (
                                    <ul className="dropDownSubcategory" >
@@ -207,6 +213,7 @@ const Directory = () => {
                                   if (resource.category.includes('Child')) {
                                   return resource;
                                   }
+                                  else {return null}
                                   }).map((resource, index) => {
                                   return (
                                     <ul className="dropDownSubcategory" >
@@ -236,6 +243,7 @@ const Directory = () => {
                                    if (resource.category.includes('School')) {
                                    return resource;
                                    }
+                                  else {return null}
                                    }).map((resource, index) => {
                                    return (
                                      <ul className="dropDownSubcategory" >
@@ -269,6 +277,7 @@ const Directory = () => {
                                     {
                                     return resource;
                                     }
+                                    else {return null}
                                     }).map((resource, index) => {
                                     return (
                                       <ul className="dropDownSubcategory" >

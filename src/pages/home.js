@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router';
 import AddResource from '../components/AddResource'
-import Directory from '../components/Directory'
 // import EditResource from '../components/EditResource'
 
 
@@ -102,7 +101,7 @@ const Home = (props) => {
         <input placeholder="Enter Query..." className="searchBar"
               onChange={handleQuery} />
         </div>
-        {query.length != 0 && (
+        {query.length !== 0 && (
         <div className="resources">
           {query.map((resource) => {
             return (
