@@ -43,7 +43,7 @@ const Directory = () => {
                            <li className="resourceLI" >
                            <em>Topic:</em> {resource.topic}
                            <br/>
-                          <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
+                          <a href= {resource.URL} target="_blank" rel="noreferrer"> <em>Visit this Link/URL</em></a>
                            <br/>
                            <em>Description:</em> {resource.description}
                            </li>
@@ -73,7 +73,9 @@ const Directory = () => {
                                    <li className="resourceLI" >
                                    <em>Topic:</em> {resource.topic}
                                    <br/>
-                                  <a href= {resource.URL} target="_blank"> <em>Visit this Link/URL</em></a>
+                                  <a href= {resource.URL} target="_blank"
+                                  rel="noreferrer">
+                                  <em>Visit this Link/URL</em></a>
                                    <br/>
                                    <em>Description:</em> {resource.description}
                                    </li>
@@ -104,7 +106,7 @@ const Directory = () => {
                                            <li className="resourceLI" >
                                            <em>Topic:</em> {resource.topic}
                                            <br/>
-                                          <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
+                                          <a href= {resource.URL} target="_blank" rel="noreferrer"> <em>Visit this Link/URL</em></a>
                                            <br/>
                                            <em>Description:</em> {resource.description}
                                            </li>
@@ -134,7 +136,7 @@ const Directory = () => {
                                             <li className="resourceLI" >
                                             <em>Topic:</em> {resource.topic}
                                             <br/>
-                                           <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
+                                           <a href= {resource.URL} target="_blank" rel="noreferrer"> <em>Visit this Link/URL</em></a>
                                             <br/>
                                             <em>Description:</em> {resource.description}
                                             </li>
@@ -164,7 +166,7 @@ const Directory = () => {
                                              <li className="resourceLI" >
                                              <em>Topic:</em> {resource.topic}
                                              <br/>
-                                            <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
+                                            <a href= {resource.URL} target="_blank" rel="noreferrer"> <em>Visit this Link/URL</em></a>
                                              <br/>
                                              <em>Description:</em> {resource.description}
                                              </li>
@@ -194,7 +196,7 @@ const Directory = () => {
                                               <li className="resourceLI" >
                                               <em>Topic:</em> {resource.topic}
                                               <br/>
-                                             <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
+                                             <a href= {resource.URL} target="_blank" rel="noreferrer"> <em>Visit    this Link/URL</em></a>
                                               <br/>
                                               <em>Description:</em> {resource.description}
                                               </li>
@@ -224,7 +226,7 @@ const Directory = () => {
                                                <li className="resourceLI" >
                                                <em>Topic:</em> {resource.topic}
                                                <br/>
-                                              <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
+                                              <a href= {resource.URL} target="_blank" rel="noreferrer"> <em>Visit    this Link/URL</em></a>
                                                <br/>
                                                <em>Description:</em> {resource.description}
                                                </li>
@@ -254,7 +256,7 @@ const Directory = () => {
                                                 <li className="resourceLI" >
                                                 <em>Topic:</em> {resource.topic}
                                                 <br/>
-                                               <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
+                                               <a href= {resource.URL} target="_blank" rel="noreferrer"> <em>Visit this Link/URL</em></a>
                                                 <br/>
                                                 <em>Description:</em> {resource.description}
                                                 </li>
@@ -288,7 +290,7 @@ const Directory = () => {
                                                  <li className="resourceLI" >
                                                  <em>Topic:</em> {resource.topic}
                                                  <br/>
-                                                <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
+                                                <a href= {resource.URL} target="_blank" rel="noreferrer"> <em>Visit this Link/URL</em></a>
                                                  <br/>
                                                  <em>Description:</em> {resource.description}
                                                  </li>
