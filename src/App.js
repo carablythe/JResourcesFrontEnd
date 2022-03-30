@@ -1,6 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 // import axios from 'axios'
+import './styles/main.css'
 import Directory from './components/Directory'
 import Navbar from './components/Navbar'
 import Home from './pages/home'

@@ -91,7 +91,7 @@ const Home = (props) => {
 
   return (
     <>
-        <div>
+        <div className = "center">
           <h2> Welcome! </h2>
           <p>As a long-term resident of Japan, I would like to share what I have learned through my ups and downs of living in this beautiful country!  </p>
           <p>I hope the resources you find on this site are informative and allow for smoother transitions and an easier time navigating through life here.</p>

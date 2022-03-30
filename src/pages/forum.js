@@ -52,8 +52,6 @@ const Forum = () => {
 
   return (
     <>
-      <h1>Life in Japan: Resource Center</h1>
-
       <div className="questions">
         {questions.map((question) => {
           return (

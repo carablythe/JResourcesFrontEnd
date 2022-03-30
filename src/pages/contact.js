@@ -6,18 +6,26 @@ const Contact = () => {
 
   return (
     <>
-    <div>
-        <form>
-            <h4>Send Cara a Message:</h4>
-            <input type='text' placeholder='Your name'/>
+    <div className = "center">
+        <h4>Send Cara a Message:</h4>
+        <form action = "https://formsubmit.co/carablythephillips@gmail.com" method = "POST" >
+            <input type= "text"
+             name = "name"
+             placeholder="Your name"
+             required />
             <br/>
-            <input type='email' placeholder='Your email address'/>
+            <input type="email"
+             name = "email" placeholder="Your email address" required />
             <br/>
-            <input type='text' placeholder='Message subject'/>
+            <input type="text"
+              name = "subject" placeholder = "Message subject" />
             <br/>
-            <textarea placeholder='Please write your message here.'></textarea>
+            <textarea
+              name = "message" placeholder = "Please write your message here."
+              required>
+            </textarea>
             <br/>
-            <button className='submit'>Send Message</button>
+            <button className="submit">Send Message</button>
         </form>
     </div>
     </>

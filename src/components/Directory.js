@@ -41,11 +41,11 @@ const Directory = () => {
                       <li className="resourceItself">
                         <ul className="resourceUL" >
                            <li className="resourceLI" >
-                           Topic: {resource.topic}
+                           <em>Topic:</em> {resource.topic}
                            <br/>
-                           Link/URL: {resource.URL}
+                          <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
                            <br/>
-                           Description: {resource.description}
+                           <em>Description:</em> {resource.description}
                            </li>
                         </ul>
                       </li>
@@ -71,11 +71,11 @@ const Directory = () => {
                               <li className="resourceItself">
                                 <ul className="resourceUL" >
                                    <li className="resourceLI" >
-                                   Topic: {resource.topic}
+                                   <em>Topic:</em> {resource.topic}
                                    <br/>
-                                   Link/URL: {resource.URL}
+                                  <a href= {resource.URL} target="_blank"> <em>Visit this Link/URL</em></a>
                                    <br/>
-                                   Description: {resource.description}
+                                   <em>Description:</em> {resource.description}
                                    </li>
                                 </ul>
                               </li>
@@ -102,11 +102,11 @@ const Directory = () => {
                                       <li className="resourceItself">
                                         <ul className="resourceUL" >
                                            <li className="resourceLI" >
-                                           Topic: {resource.topic}
+                                           <em>Topic:</em> {resource.topic}
                                            <br/>
-                                           Link/URL: {resource.URL}
+                                          <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
                                            <br/>
-                                           Description: {resource.description}
+                                           <em>Description:</em> {resource.description}
                                            </li>
                                         </ul>
                                       </li>
@@ -132,11 +132,11 @@ const Directory = () => {
                                        <li className="resourceItself">
                                          <ul className="resourceUL" >
                                             <li className="resourceLI" >
-                                            Topic: {resource.topic}
+                                            <em>Topic:</em> {resource.topic}
                                             <br/>
-                                            Link/URL: {resource.URL}
+                                           <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
                                             <br/>
-                                            Description: {resource.description}
+                                            <em>Description:</em> {resource.description}
                                             </li>
                                          </ul>
                                        </li>
@@ -162,11 +162,11 @@ const Directory = () => {
                                         <li className="resourceItself">
                                           <ul className="resourceUL" >
                                              <li className="resourceLI" >
-                                             Topic: {resource.topic}
+                                             <em>Topic:</em> {resource.topic}
                                              <br/>
-                                             Link/URL: {resource.URL}
+                                            <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
                                              <br/>
-                                             Description: {resource.description}
+                                             <em>Description:</em> {resource.description}
                                              </li>
                                           </ul>
                                         </li>
@@ -192,11 +192,11 @@ const Directory = () => {
                                          <li className="resourceItself">
                                            <ul className="resourceUL" >
                                               <li className="resourceLI" >
-                                              Topic: {resource.topic}
+                                              <em>Topic:</em> {resource.topic}
                                               <br/>
-                                              Link/URL: {resource.URL}
+                                             <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
                                               <br/>
-                                              Description: {resource.description}
+                                              <em>Description:</em> {resource.description}
                                               </li>
                                            </ul>
                                          </li>
@@ -222,11 +222,11 @@ const Directory = () => {
                                           <li className="resourceItself">
                                             <ul className="resourceUL" >
                                                <li className="resourceLI" >
-                                               Topic: {resource.topic}
+                                               <em>Topic:</em> {resource.topic}
                                                <br/>
-                                               Link/URL: {resource.URL}
+                                              <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
                                                <br/>
-                                               Description: {resource.description}
+                                               <em>Description:</em> {resource.description}
                                                </li>
                                             </ul>
                                           </li>
@@ -252,11 +252,11 @@ const Directory = () => {
                                            <li className="resourceItself">
                                              <ul className="resourceUL" >
                                                 <li className="resourceLI" >
-                                                Topic: {resource.topic}
+                                                <em>Topic:</em> {resource.topic}
                                                 <br/>
-                                                Link/URL: {resource.URL}
+                                               <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
                                                 <br/>
-                                                Description: {resource.description}
+                                                <em>Description:</em> {resource.description}
                                                 </li>
                                              </ul>
                                            </li>
@@ -286,11 +286,11 @@ const Directory = () => {
                                             <li className="resourceItself">
                                               <ul className="resourceUL" >
                                                  <li className="resourceLI" >
-                                                 Topic: {resource.topic}
+                                                 <em>Topic:</em> {resource.topic}
                                                  <br/>
-                                                 Link/URL: {resource.URL}
+                                                <a href= {resource.URL} target="_blank"> <em>Visit    this Link/URL</em></a>
                                                  <br/>
-                                                 Description: {resource.description}
+                                                 <em>Description:</em> {resource.description}
                                                  </li>
                                               </ul>
                                             </li>
