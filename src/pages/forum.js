@@ -46,7 +46,6 @@ const Forum = () => {
         })
       }
 
-
   useEffect(() => {
    getQuestions()
   }, [])

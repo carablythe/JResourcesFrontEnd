@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import { useParams } from 'react-router';
 import AddResource from '../components/AddResource'
 import Directory from '../components/Directory'
 // import EditResource from '../components/EditResource'
 
 
 const Home = (props) => {
-  const [resources, setResources] = useState([])
+  const [resources, setResources] = useState([]); useParams()
   const [query, setQuery] = useState([])
+
+
+// adapted below searchbar filter from https://www.youtube.com/watch?v=x7niho285qs
 
   const handleQuery = (event) => {
     const queryWord = event.target.value
@@ -88,6 +92,7 @@ const Home = (props) => {
 
   return (
     <>
+
       <h1>Life in Japan: Resource Center</h1>
         <div>
           <h2> Welcome! </h2>
