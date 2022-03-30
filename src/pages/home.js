@@ -92,8 +92,6 @@ const Home = (props) => {
 
   return (
     <>
-
-      <h1>Life in Japan: Resource Center</h1>
         <div>
           <h2> Welcome! </h2>
           <p>As a long-term resident of Japan, I would like to share what I have learned through my ups and downs of living in this beautiful country!  </p>

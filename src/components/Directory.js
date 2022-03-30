@@ -1,18 +1,9 @@
-import React, { useState, useEffect  } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 
 const Directory = () => {
   const [resources, setResources] = useState([])
-  const [showImmigration, setShowImmigration] = useState(false);
-  const [showEmployment, setShowEmployment] = useState(false);
-  const [showHousing, setShowHousing] = useState(false);
-  const [showTaxes, setShowTaxes] = useState(false);
-  const [showMedicalCare, setShowMedicalCare] = useState(false);
-  const [showLegalMatters, setShowLegalMatters] = useState(false);
-  const [showChildcare, setShowChildcare] = useState(false);
-  const [showSchoolSystem, setShowSchoolSystem] = useState(false);
-  const [showLanguageServices, setShowLanguageServices] = useState(false);
 
   const getResources = () => {
     axios
@@ -32,19 +23,20 @@ const Directory = () => {
     return (
       <>
       <aside>
+        <h3>Explore the Resource Directory:</h3>
           <div className='directoryMenu'>
             <details className="dropdown" >
               <summary className="resourceCategory">Immigration</summary>
-              <div className="resourceDiv">
-                {resources.filter((resource, index) => {
+                <div className="resourceDiv">
+                  {resources.filter((resource, index) => {
                   if (resource.category.includes('Immigration')) {
                   return resource;
                   }
-                }).map((resource, index) => {
-               return (
-                 <ul className="dropDownSubcategory" >
-                 <details>
-                  <summary className="resourceSubcategory" key={resource.id}> {resource.subcategory} </summary>
+                  }).map((resource, index) => {
+                  return (
+                   <ul className="dropDownSubcategory" >
+                    <details>
+                     <summary className="resourceSubcategory" key={resource.id}> {resource.subcategory} </summary>
                       <li className="resourceItself">
                         <ul className="resourceUL" >
                            <li className="resourceLI" >
@@ -56,18 +48,17 @@ const Directory = () => {
                            </li>
                         </ul>
                       </li>
-                 </details>
-                </ul>
-                )
-               }
-             )}
+                    </details>
+                  </ul>
+                  )
+                })}
              </div>
           </details>
-                  <details className="dropdown" >
-                   <summary className="resourceCategory">Employment</summary>
-                    <div className="resourceDiv">
+          <details className="dropdown" >
+              <summary className="resourceCategory">Employment</summary>
+                 <div className="resourceDiv">
                      {resources.filter((resource, index) => {
-                      if (resource.category.includes('Employment')) {
+                      if (resource.category.includes('Employ')) {
                       return resource;
                       }
                       }).map((resource, index) => {
@@ -91,8 +82,215 @@ const Directory = () => {
                         )
                        }
                      )}
-                     </div>
+                 </div>
+            </details>
+            <details className="dropdown" >
+                    <summary className="resourceCategory">Housing</summary>
+                        <div className="resourceDiv">
+                             {resources.filter((resource, index) => {
+                              if (resource.category.includes('Housing')) {
+                              return resource;
+                              }
+                              }).map((resource, index) => {
+                              return (
+                                <ul className="dropDownSubcategory" >
+                                 <details>
+                                  <summary className="resourceSubcategory" key={resource.id}> {resource.subcategory} </summary>
+                                      <li className="resourceItself">
+                                        <ul className="resourceUL" >
+                                           <li className="resourceLI" >
+                                           Topic: {resource.topic}
+                                           <br/>
+                                           Link/URL: {resource.URL}
+                                           <br/>
+                                           Description: {resource.description}
+                                           </li>
+                                        </ul>
+                                      </li>
+                                  </details>
+                                </ul>
+                                )
+                              })}
+                        </div>
+             </details>
+             <details className="dropdown" >
+                     <summary className="resourceCategory">Taxes</summary>
+                         <div className="resourceDiv">
+                              {resources.filter((resource, index) => {
+                               if (resource.category.includes('Tax')) {
+                               return resource;
+                               }
+                               }).map((resource, index) => {
+                               return (
+                                 <ul className="dropDownSubcategory" >
+                                  <details>
+                                   <summary className="resourceSubcategory" key={resource.id}> {resource.subcategory} </summary>
+                                       <li className="resourceItself">
+                                         <ul className="resourceUL" >
+                                            <li className="resourceLI" >
+                                            Topic: {resource.topic}
+                                            <br/>
+                                            Link/URL: {resource.URL}
+                                            <br/>
+                                            Description: {resource.description}
+                                            </li>
+                                         </ul>
+                                       </li>
+                                   </details>
+                                 </ul>
+                                 )
+                               })}
+                         </div>
+              </details>
+              <details className="dropdown" >
+                      <summary className="resourceCategory">Medical Care</summary>
+                          <div className="resourceDiv">
+                               {resources.filter((resource, index) => {
+                                if (resource.category.includes('Medical')) {
+                                return resource;
+                                }
+                                }).map((resource, index) => {
+                                return (
+                                  <ul className="dropDownSubcategory" >
+                                   <details>
+                                    <summary className="resourceSubcategory" key={resource.id}> {resource.subcategory} </summary>
+                                        <li className="resourceItself">
+                                          <ul className="resourceUL" >
+                                             <li className="resourceLI" >
+                                             Topic: {resource.topic}
+                                             <br/>
+                                             Link/URL: {resource.URL}
+                                             <br/>
+                                             Description: {resource.description}
+                                             </li>
+                                          </ul>
+                                        </li>
+                                    </details>
+                                  </ul>
+                                  )
+                                })}
+                          </div>
+               </details>
+               <details className="dropdown" >
+                       <summary className="resourceCategory">Legal Matters</summary>
+                           <div className="resourceDiv">
+                                {resources.filter((resource, index) => {
+                                 if (resource.category.includes('Legal')) {
+                                 return resource;
+                                 }
+                                 }).map((resource, index) => {
+                                 return (
+                                   <ul className="dropDownSubcategory" >
+                                    <details>
+                                     <summary className="resourceSubcategory" key={resource.id}> {resource.subcategory} </summary>
+                                         <li className="resourceItself">
+                                           <ul className="resourceUL" >
+                                              <li className="resourceLI" >
+                                              Topic: {resource.topic}
+                                              <br/>
+                                              Link/URL: {resource.URL}
+                                              <br/>
+                                              Description: {resource.description}
+                                              </li>
+                                           </ul>
+                                         </li>
+                                     </details>
+                                   </ul>
+                                   )
+                                 })}
+                           </div>
+                </details>
+                <details className="dropdown" >
+                        <summary className="resourceCategory">Childcare</summary>
+                            <div className="resourceDiv">
+                                 {resources.filter((resource, index) => {
+                                  if (resource.category.includes('Child')) {
+                                  return resource;
+                                  }
+                                  }).map((resource, index) => {
+                                  return (
+                                    <ul className="dropDownSubcategory" >
+                                     <details>
+                                      <summary className="resourceSubcategory" key={resource.id}> {resource.subcategory} </summary>
+                                          <li className="resourceItself">
+                                            <ul className="resourceUL" >
+                                               <li className="resourceLI" >
+                                               Topic: {resource.topic}
+                                               <br/>
+                                               Link/URL: {resource.URL}
+                                               <br/>
+                                               Description: {resource.description}
+                                               </li>
+                                            </ul>
+                                          </li>
+                                      </details>
+                                    </ul>
+                                    )
+                                  })}
+                            </div>
+                 </details>
+                 <details className="dropdown" >
+                         <summary className="resourceCategory">School System</summary>
+                             <div className="resourceDiv">
+                                  {resources.filter((resource, index) => {
+                                   if (resource.category.includes('School')) {
+                                   return resource;
+                                   }
+                                   }).map((resource, index) => {
+                                   return (
+                                     <ul className="dropDownSubcategory" >
+                                      <details>
+                                       <summary className="resourceSubcategory" key={resource.id}> {resource.subcategory} </summary>
+                                           <li className="resourceItself">
+                                             <ul className="resourceUL" >
+                                                <li className="resourceLI" >
+                                                Topic: {resource.topic}
+                                                <br/>
+                                                Link/URL: {resource.URL}
+                                                <br/>
+                                                Description: {resource.description}
+                                                </li>
+                                             </ul>
+                                           </li>
+                                       </details>
+                                     </ul>
+                                     )
+                                   })}
+                             </div>
                   </details>
+                  <details className="dropdown" >
+                          <summary className="resourceCategory">Translation & Language Services</summary>
+                              <div className="resourceDiv">
+                                   {resources.filter((resource, index) => {
+                                    if (resource.category.includes('Translation')) {
+                                    return resource;
+                                    }
+                                    else if (resource.category.includes('Language'))
+                                    {
+                                    return resource;
+                                    }
+                                    }).map((resource, index) => {
+                                    return (
+                                      <ul className="dropDownSubcategory" >
+                                       <details>
+                                        <summary className="resourceSubcategory" key={resource.id}> {resource.subcategory} </summary>
+                                            <li className="resourceItself">
+                                              <ul className="resourceUL" >
+                                                 <li className="resourceLI" >
+                                                 Topic: {resource.topic}
+                                                 <br/>
+                                                 Link/URL: {resource.URL}
+                                                 <br/>
+                                                 Description: {resource.description}
+                                                 </li>
+                                              </ul>
+                                            </li>
+                                        </details>
+                                      </ul>
+                                      )
+                                    })}
+                              </div>
+                   </details>
            </div>
        </aside>
      </>

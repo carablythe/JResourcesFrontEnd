@@ -7,10 +7,9 @@ const About = () => {
 
   return (
     <>
-      <h1>Life in Japan: Resource Center</h1>
 
       <div className="aboutAdmin">
-           <h3>Welcome!</h3>
+           <h3>Who is Cara?</h3>
       </div>
     </>
   )
