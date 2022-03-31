@@ -118,7 +118,7 @@ const Home = (props) => {
         </div>
       )}
         <br/>
-        <AddResource/>
+        <AddResource handleCreateResource = {handleCreateResource}/>
     </>
   )
 }
