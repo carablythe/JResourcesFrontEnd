@@ -55,7 +55,7 @@ const Forum = () => {
     <>
      <aside className = "forum">
       <div className="questions">
-        <h3>Questions? Comments? Post them here:</h3>
+        <h3 className ="forumTitle">Questions? Comments? Post them here:</h3>
         {questions.map((question) => {
           return (
             <div className="question" key={question.id}>

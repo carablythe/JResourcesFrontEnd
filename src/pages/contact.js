@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <>
     <aside className = "contact">
-        <h3>Send Cara a Message:</h3>
+        <h3 className ="contactTitle">Send Cara a Message:</h3>
         <form action = "https://formsubmit.co/carablythephillips@gmail.com" method = "POST" >
             <input type= "text"
              name = "name"
@@ -20,7 +20,7 @@ const Contact = () => {
             <input type="text"
               name = "subject" placeholder = "Message subject" />
             <br/>
-            <textarea className = "textarea"
+            <textarea
               name = "message" placeholder = "Please write your message here."
               required>
             </textarea>

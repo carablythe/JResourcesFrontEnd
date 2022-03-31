@@ -9,10 +9,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
 .Popup-inner {
-  position: relative;
+  position: fixed;
   padding: 30px 30px 60px 30px;
   width: 100%;
   max-width: 640px;

@@ -4,12 +4,13 @@ $very-dark-red: #2e111a
 $dark-pink: #AA104F
 $jade-green: #01A66F
 $dark-green: #198450
+$super-dark-green: #006432
 $pale-green: #ccfdcc
 $sakurabackground: url("https://i.imgur.com/L9JwPub.png")
 
 html
   background-image: $sakurabackground
-  background-size: 100% 100%
+  background-size: cover
 
 .container
   display: flex
@@ -19,14 +20,9 @@ html, div, form, button, input, textarea, select, option
   color: $very-dark-red
   font-size: 2vw
 
-.textarea
-  width: 20px
-  height: 10px
-  font-size: 2.5vw
-  resize: vertical
 
 .header
-  color: $dark-green
+  color: $super-dark-green
   text-align: center
   font-size: 4vw
   padding: 0vw 0vw 0vw 0vw
@@ -38,7 +34,7 @@ html, div, form, button, input, textarea, select, option
 
 
 .nav
-  position: fixed
+  position: absolute
   top: 0
   width: 100%
   height: 18vw
@@ -47,38 +43,90 @@ html, div, form, button, input, textarea, select, option
   filter: invert(.8)
   margin: 0vw 0vw 1vw 0vw
   padding: 0vw 0vw 0vw 0vw
+  z-index: 500
+  box-shadow: .5vw .5vw $dark-pink, 1.5vw 1.5vw 1.5vw $jade-green
 
-h3
-  color: $dark-green
 
 aside
-  margin: 18vw 3vw 3vw 3vw
+  margin: 18vw 4vw 3vw 0vw
 
 .directoryMenu
-  width: 85%
+    position: relative
+    width: 40%
+    background-image: $sakurabackground
+    background-size: cover
+    filter: invert(.8)
+    padding: 1vw 3vw 5vw 3vw
+    z-index: 1
+    box-shadow: .5vw .5vw $dark-pink, 1.5vw 1.5vw 1.5vw $jade-green
+
 
 .contact, .forum, .home
   width: 115%
+  padding: 2vw 2vw 2vw 2vw
 
 summary, li
   list-style-type: none
 
-a, summary:hover, .search
-  text-decoration: none
-  color: $dark-pink
+.resourceSubcategory, .resourceLI
+  margin-left: -3vw
 
-a:hover
+a, summary:hover
+  text-decoration: none
   color: $jade-green
+
+a:hover, .search
+  color: $dark-pink
 
 button, .submit
   background: $pale-green
+  box-shadow: 3px 3px $dark-pink
+
+button:hover, .submit:hover
+  filter: invert(1)
 
 .clickHere, .searchResults
   color: $dark-green
   font-size: 2.3vw
 
+.clickHere:hover
+  color: $dark-pink
+
+.directoryTitle, .welcome, .forumTitle, .contactTitle
+  color: $dark-pink
+
 .posting
   font-family: $helvetica-font
+
+.Popup
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 999
+  background-color: rgba(0,0,0,0.7)
+  background-size: cover
+
+.Popup-inner
+  position: fixed
+  padding: 30px 30px 60px 30px
+  width: 100%
+  max-width: 640px
+  background-image: $sakurabackground
+  background-size: cover
+  box-shadow: .5vw .5vw $dark-pink, 1.5vw 1.5vw 1.5vw $jade-green
+
+
+.close-btn
+  position: absolute
+  bottom: 16px
+  right: 16px
+  box-shadow: 3px 3px $dark-pink
+
 
 @media (max-width: 700px)
   html, form, button, input, .nav

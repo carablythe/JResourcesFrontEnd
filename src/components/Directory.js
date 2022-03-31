@@ -24,7 +24,7 @@ const Directory = () => {
       <>
       <aside className= "directoryMenu">
           <div>
-            <h3>Resource Directory:</h3>
+            <h3 className="directoryTitle">Resource Directory:</h3>
             <details className="dropdown" >
               <summary className="resourceCategory"><b>Immigration</b></summary>
                 <div className="resourceDiv">
