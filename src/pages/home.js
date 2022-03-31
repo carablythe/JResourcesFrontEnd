@@ -92,10 +92,10 @@ const Home = (props) => {
   return (
     <>
         <div className = "center">
-          <h2 className = "welcome"> Welcome! </h2>
-          <p className = "welcome">As a long-term resident of Japan, I would like to share what I have learned through my ups and downs of living in this beautiful country!  </p>
-          <p className = "welcome">I hope the resources you find on this site are informative and allow for smoother transitions and an easier time navigating through life here.</p>
-          <p className = "welcome">-Cara</p>
+          <h3 className = "welcome"> Welcome! </h3>
+          <h5 className = "welcome">As a long-term resident of Japan, I would like to share what I have learned through my ups and downs of living in this beautiful country!  </h5>
+          <h5 className = "welcome">I hope the resources you find on this site are informative and allow for smoother transitions and an easier time navigating through life here.</h5>
+          <h5 className = "welcome">-Cara</h5>
         </div>
         <div className="search"><b>Search Topic:</b>
         <input placeholder="Enter Query..." className="searchBar"
@@ -117,6 +117,8 @@ const Home = (props) => {
           })}
         </div>
       )}
+        <br/>
+        <AddResource/>
     </>
   )
 }

@@ -15,7 +15,7 @@ const AddQuestion = (props) => {
   return (
     <>
       <details>
-      <summary>Click Here to Ask a Question or Add a Comment. </summary>
+      <summary class = "clickHere">Click Here to Ask a Question or Add a Comment</summary>
          <br />
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Your Name:</label>

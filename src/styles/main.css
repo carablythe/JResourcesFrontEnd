@@ -1,4 +1,4 @@
-html, form, button, input, textarea {
+html, form, button, input, textarea, select, .option {
   font-family: "Marcellus", sans-serif;
   color: #2e111a;
   background-image: url("https://i.imgur.com/L9JwPub.png");
@@ -8,8 +8,8 @@ html, form, button, input, textarea {
 }
 
 .textarea {
-  width: 40vw;
-  height: 20vw;
+  width: 20px;
+  height: 10px;
   font-size: 3.2vw;
 }
 
@@ -39,13 +39,14 @@ button, .submit {
   color: #2e111a;
 }
 
-.welcome {
+.welcome, .clickHere {
   color: #198450;
 }
 
 @media (max-width: 700px) {
   html, form, button, input {
     font-size: 3.5vw;
+    background-size: 100% 100%;
   }
 }
 

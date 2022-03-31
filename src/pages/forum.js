@@ -50,16 +50,17 @@ const Forum = () => {
    getQuestions()
   }, [])
 
+
   return (
     <>
       <div className="questions">
+        <h4>Questions? Comments? Post them here:</h4>
         {questions.map((question) => {
           return (
             <div className="question" key={question.id}>
-            <h4>Name: {question.name}</h4>
+            <h5>Name: {question.name}</h5>
             <h5>Question/Comment: {question.question}</h5>
             <EditQuestion handleUpdateQuestion={handleUpdateQuestion} id={question.id} />
-            <br/>
             <button onClick={handleDeleteQuestion} value={question.id}> Delete Your Question</button>
             </div>
              )

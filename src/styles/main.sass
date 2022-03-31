@@ -8,7 +8,7 @@ $pale-green: #ccfdcc
 $sakurabackground: url("https://i.imgur.com/L9JwPub.png")
 
 
-html, form, button, input, textarea
+html, form, button, input, textarea, select, .option
   font-family: $marcellus-font
   color: $very-dark-red
   background-image: $sakurabackground
@@ -17,8 +17,8 @@ html, form, button, input, textarea
   font-size: 2.5vw
 
 .textarea
-  width: 40vw
-  height: 20vw
+  width: 20px
+  height: 10px
   font-size: 3.2vw
 
 
@@ -42,9 +42,10 @@ button, .submit
   align-content: center
   color: $very-dark-red
 
-.welcome
+.welcome, .clickHere
   color: $dark-green
 
 @media (max-width: 700px)
   html, form, button, input
     font-size: 3.5vw
+    background-size: 100% 100%

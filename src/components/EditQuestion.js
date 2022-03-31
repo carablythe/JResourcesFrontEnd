@@ -18,7 +18,7 @@ const EditQuestion = (props) => {
   return (
     <>
       <details>
-        <summary>Click Here to Edit Your Question</summary>
+        <summary class = "clickHere">Click Here to Edit Your Question</summary>
           <br />
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Edit Your Name: </label>

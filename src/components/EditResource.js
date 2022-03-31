@@ -18,7 +18,7 @@ const EditResource = (props) => {
   return (
     <>
       <details>
-        <summary>Click Here to Edit This Resource</summary>
+        <summary class = "clickHere">Click Here to Edit This Resource</summary>
         <br />
         <form onSubmit={handleSubmit}>
           <label htmlFor="topic">Topic:</label>

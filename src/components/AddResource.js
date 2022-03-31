@@ -17,7 +17,7 @@ const AddResource = (props) => {
   return (
     <>
     <details>
-    <summary>Click Here to Add a Resource to this Site</summary>
+    <summary class = "clickHere"><b>Click Here to Add a Resource to this Site</b></summary>
       <h5><em>Keep in mind this site is for information purposes only, so please try to share mainly fact-based resources.</em></h5>
       <form onSubmit={handleSubmit}>
         <label htmlFor="topic">Topic:</label>
@@ -25,15 +25,15 @@ const AddResource = (props) => {
             <br />
         <label htmlFor="category">Category:</label>
           <select name="category" value={resource.category} onChange={handleChange}>
-            <option>Immigration</option>
-            <option>Employment</option>
-            <option>Housing</option>
-            <option>Taxes</option>
-            <option>Medical Care</option>
-            <option>Legal Matters</option>
-            <option>Childcare</option>
-            <option>School System</option>
-            <option>Translation & Language Services</option>
+            <option class = "option">Immigration</option>
+            <option class = "option">Employment</option>
+            <option class = "option">Housing</option>
+            <option class = "option">Taxes</option>
+            <option class = "option">Medical Care</option>
+            <option class = "option">Legal Matters</option>
+            <option class = "option">Childcare</option>
+            <option class = "option">School System</option>
+            <option class = "option">Translation & Language Services</option>
           </select>
             <br />
         <label htmlFor="subcategory">Subcategory:</label>

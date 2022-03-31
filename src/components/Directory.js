@@ -23,7 +23,7 @@ const Directory = () => {
     return (
       <>
       <aside>
-        <h3>Explore the Resource Directory:</h3>
+        <h3>Resource Directory:</h3>
           <div className='directoryMenu'>
             <details className="dropdown" >
               <summary className="resourceCategory"><b>Immigration</b></summary>
