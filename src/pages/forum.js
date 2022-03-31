@@ -53,13 +53,16 @@ const Forum = () => {
 
   return (
     <>
+     <aside className = "forum">
       <div className="questions">
-        <h4>Questions? Comments? Post them here:</h4>
+        <h3>Questions? Comments? Post them here:</h3>
         {questions.map((question) => {
           return (
             <div className="question" key={question.id}>
-            <h5>Name: {question.name}</h5>
-            <h5>Question/Comment: {question.question}</h5>
+            <h4>Name: </h4>
+            <p className= "posting"> {question.name}</p>
+            <h4>Question/Comment:</h4>
+            <p className= "posting">{question.question}</p>
             <EditQuestion handleUpdateQuestion={handleUpdateQuestion} id={question.id} />
             <button onClick={handleDeleteQuestion} value={question.id}> Delete Your Question</button>
             </div>
@@ -69,6 +72,7 @@ const Forum = () => {
         ----------------------------
           <br/>
       <AddQuestion handleCreate={handleCreateQuestion} />
+      </aside>
     </>
   )
 }

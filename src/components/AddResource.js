@@ -24,16 +24,16 @@ const AddResource = (props) => {
           <input type="text" name="topic" value={resource.topic} onChange={handleChange} />
             <br />
         <label htmlFor="category">Category:</label>
-          <select name="category" value={resource.category} onChange={handleChange}>
-            <option class = "option">Immigration</option>
-            <option class = "option">Employment</option>
-            <option class = "option">Housing</option>
-            <option class = "option">Taxes</option>
-            <option class = "option">Medical Care</option>
-            <option class = "option">Legal Matters</option>
-            <option class = "option">Childcare</option>
-            <option class = "option">School System</option>
-            <option class = "option">Translation & Language Services</option>
+          <select className = "option" name="category" value={resource.category} onChange={handleChange}>
+            <option className = "option">Immigration</option>
+            <option className = "option">Employment</option>
+            <option className = "option">Housing</option>
+            <option className = "option">Taxes</option>
+            <option className = "option">Medical Care</option>
+            <option className = "option">Legal Matters</option>
+            <option className = "option">Childcare</option>
+            <option className = "option">School System</option>
+            <option className = "option">Translation & Language Services</option>
           </select>
             <br />
         <label htmlFor="subcategory">Subcategory:</label>

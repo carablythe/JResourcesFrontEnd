@@ -6,8 +6,8 @@ const Contact = () => {
 
   return (
     <>
-    <div className = "center">
-        <h4>Send Cara a Message:</h4>
+    <aside className = "contact">
+        <h3>Send Cara a Message:</h3>
         <form action = "https://formsubmit.co/carablythephillips@gmail.com" method = "POST" >
             <input type= "text"
              name = "name"
@@ -27,7 +27,7 @@ const Contact = () => {
             <br/>
             <button className="submit">Send Message</button>
         </form>
-    </div>
+    </aside>
     </>
   )
 }

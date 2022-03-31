@@ -22,9 +22,9 @@ const Directory = () => {
 
     return (
       <>
-      <aside>
-        <h3>Resource Directory:</h3>
-          <div className='directoryMenu'>
+      <aside className= "directoryMenu">
+          <div>
+            <h3>Resource Directory:</h3>
             <details className="dropdown" >
               <summary className="resourceCategory"><b>Immigration</b></summary>
                 <div className="resourceDiv">
@@ -55,6 +55,7 @@ const Directory = () => {
                 })}
              </div>
           </details>
+          <br/>
           <details className="dropdown" >
               <summary className="resourceCategory"><b>Employment</b></summary>
                  <div className="resourceDiv">
@@ -88,6 +89,7 @@ const Directory = () => {
                      )}
                  </div>
             </details>
+            <br/>
             <details className="dropdown" >
                     <summary className="resourceCategory"><b>Housing</b></summary>
                         <div className="resourceDiv">
@@ -118,6 +120,7 @@ const Directory = () => {
                               })}
                         </div>
              </details>
+             <br/>
              <details className="dropdown" >
                      <summary className="resourceCategory"><b>Taxes</b></summary>
                          <div className="resourceDiv">
@@ -148,6 +151,7 @@ const Directory = () => {
                                })}
                          </div>
               </details>
+              <br/>
               <details className="dropdown" >
                       <summary className="resourceCategory"><b>Medical Care</b></summary>
                           <div className="resourceDiv">
@@ -178,6 +182,7 @@ const Directory = () => {
                                 })}
                           </div>
                </details>
+               <br/>
                <details className="dropdown" >
                        <summary className="resourceCategory"><b>Legal Matters</b></summary>
                            <div className="resourceDiv">
@@ -208,6 +213,7 @@ const Directory = () => {
                                  })}
                            </div>
                 </details>
+                <br/>
                 <details className="dropdown" >
                         <summary className="resourceCategory"><b>Childcare</b></summary>
                             <div className="resourceDiv">
@@ -238,6 +244,7 @@ const Directory = () => {
                                   })}
                             </div>
                  </details>
+                 <br/>
                  <details className="dropdown" >
                          <summary className="resourceCategory"><b>School System</b></summary>
                              <div className="resourceDiv">
@@ -268,6 +275,7 @@ const Directory = () => {
                                    })}
                              </div>
                   </details>
+                  <br/>
                   <details className="dropdown" >
                           <summary className="resourceCategory"><b>Translation & Language Services</b></summary>
                               <div className="resourceDiv">

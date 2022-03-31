@@ -15,8 +15,10 @@ const App = () => {
 
   return (
     <>
+    <div className = "container">
     <Router>
       <Navbar/>
+      <Directory/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/pages/forum" element={<Forum/>}/>
@@ -24,9 +26,8 @@ const App = () => {
         <Route path="/pages/admin" />
         <Route path="/pages/login" element={<Login/>}/>
       </Routes>
-      <Directory/>
     </Router>
-
+   </div>
    </>
   )
 }

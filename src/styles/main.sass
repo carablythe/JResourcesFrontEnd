@@ -11,21 +11,54 @@ html
   background-image: $sakurabackground
   background-size: 100% 100%
 
-html, form, button, input, textarea, select, .option
+.container
+  display: flex
+
+html, div, form, button, input, textarea, select, option
   font-family: $marcellus-font
   color: $very-dark-red
-  margin: 2vw 2vw
-  font-size: 2.5vw
+  font-size: 2vw
 
 .textarea
   width: 20px
   height: 10px
-  font-size: 3.2vw
+  font-size: 2.5vw
   resize: vertical
 
+.header
+  color: $dark-green
+  text-align: center
+  font-size: 4vw
+  padding: 0vw 0vw 0vw 0vw
+
+.navList
+  display: inline
+  padding: 0vw 2vw 2vw 2.5vw
+  font-size: 2.3vw
+
+
+.nav
+  position: fixed
+  top: 0
+  width: 100%
+  height: 18vw
+  background-image: $sakurabackground
+  background-size: cover
+  filter: invert(.8)
+  margin: 0vw 0vw 1vw 0vw
+  padding: 0vw 0vw 0vw 0vw
+
+h3
+  color: $dark-green
 
 aside
-  float: left
+  margin: 18vw 3vw 3vw 3vw
+
+.directoryMenu
+  width: 85%
+
+.contact, .forum, .home
+  width: 115%
 
 summary, li
   list-style-type: none
@@ -40,14 +73,14 @@ a:hover
 button, .submit
   background: $pale-green
 
-.center
-  align-content: center
-  color: $very-dark-red
-
-.welcome, .clickHere
+.clickHere, .searchResults
   color: $dark-green
+  font-size: 2.3vw
+
+.posting
+  font-family: $helvetica-font
 
 @media (max-width: 700px)
-  html, form, button, input
+  html, form, button, input, .nav
     font-size: 3.5vw
     background-size: 100% 100%

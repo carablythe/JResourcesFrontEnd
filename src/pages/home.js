@@ -91,26 +91,33 @@ const Home = (props) => {
 
   return (
     <>
-        <div className = "center">
+      <aside className = "home">
+        <div>
           <h3 className = "welcome"> Welcome! </h3>
-          <h5 className = "welcome">As a long-term resident of Japan, I would like to share what I have learned through my ups and downs of living in this beautiful country!  </h5>
-          <h5 className = "welcome">I hope the resources you find on this site are informative and allow for smoother transitions and an easier time navigating through life here.</h5>
-          <h5 className = "welcome">-Cara</h5>
+          <h4>As a long-term resident of Japan, I would like to share what I have learned through my ups and downs of living in this beautiful country!  </h4>
+          <h4>I hope the resources you find on this site are informative and allow for smoother transitions and an easier time navigating through life here.</h4>
+          <h4>-Cara</h4>
         </div>
         <div className="search"><b>Search Topic:</b>
         <input placeholder="Enter Query..." className="searchBar"
               onChange={handleQuery} />
         </div>
+          <br/>
         {query.length !== 0 && (
         <div className="resourcesSearchReturn">
+           <h4 className="searchResults">Search Results:</h4>
           {query.map((resource) => {
             return (
             <div className="resource" key={resource.id}>
             <h4>Topic: {resource.topic}</h4>
-            <h5>Category: {resource.category}</h5>
-            <h5>Subcategory: {resource.subcategory}</h5>
-            <h5>Link/URL: {resource.URL}</h5>
-            <h5>Description: {resource.description}</h5>
+            <p>Category: {resource.category}</p>
+            <p>Subcategory: {resource.subcategory}</p>
+            <p>
+            <a href= {resource.URL} target="_blank"
+            rel="noreferrer">
+            <em>Visit this Link/URL</em></a>
+            </p>
+            <p>Description: {resource.description}</p>
             ----------------------------
             </div>
            )
@@ -119,6 +126,8 @@ const Home = (props) => {
       )}
         <br/>
         <AddResource handleCreateResource = {handleCreateResource}/>
+        <br/>
+      </aside>
     </>
   )
 }
