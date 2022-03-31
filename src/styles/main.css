@@ -1,9 +1,16 @@
-html {
-  font-family: Helvetica, sans-serif;
+html, form, button, input, textarea {
+  font-family: "Marcellus", sans-serif;
   color: #2e111a;
   background-image: url("https://i.imgur.com/L9JwPub.png");
   background-size: 100% 100%;
   margin: 2vw 2vw;
+  font-size: 2.5vw;
+}
+
+.textarea {
+  width: 40vw;
+  height: 20vw;
+  font-size: 3.2vw;
 }
 
 aside {
@@ -12,21 +19,34 @@ aside {
 
 summary, li {
   list-style-type: none;
-  font-size: 2.5vw;
 }
 
-a {
+a, summary:hover, .search {
   text-decoration: none;
-  color: #E75480;
+  color: #AA104F;
 }
 
-a:hover, summary:hover {
-  color: #AA104F;
+a:hover {
+  color: #01A66F;
+}
+
+button, .submit {
+  background: #ccfdcc;
 }
 
 .center {
   align-content: center;
-  color: #AA104F;
+  color: #2e111a;
+}
+
+.welcome {
+  color: #198450;
+}
+
+@media (max-width: 700px) {
+  html, form, button, input {
+    font-size: 3.5vw;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

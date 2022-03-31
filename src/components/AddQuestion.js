@@ -18,13 +18,16 @@ const AddQuestion = (props) => {
       <summary>Click Here to Ask a Question or Add a Comment. </summary>
          <br />
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Your Name(optional):</label>
+        <label htmlFor="name">Your Name:</label>
+          <br/>
         <input type="text" name="name"value={question.name} onChange={handleChange} />
           <br />
         <label htmlFor="question">Your Question/Comment: </label>
-        <input type="text" name="question" value={question.question} onChange={handleChange} />
           <br />
-        <input type="submit"/>
+        <textarea name="question" value={question.question} onChange={handleChange}>
+        </textarea>
+          <br />
+        <input className = "submit" type="submit"/>
       </form>
       </details>
     </>

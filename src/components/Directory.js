@@ -26,7 +26,7 @@ const Directory = () => {
         <h3>Explore the Resource Directory:</h3>
           <div className='directoryMenu'>
             <details className="dropdown" >
-              <summary className="resourceCategory">Immigration</summary>
+              <summary className="resourceCategory"><b>Immigration</b></summary>
                 <div className="resourceDiv">
                   {resources.filter((resource, index) => {
                   if (resource.category.includes('Immigration')) {
@@ -56,7 +56,7 @@ const Directory = () => {
              </div>
           </details>
           <details className="dropdown" >
-              <summary className="resourceCategory">Employment</summary>
+              <summary className="resourceCategory"><b>Employment</b></summary>
                  <div className="resourceDiv">
                      {resources.filter((resource, index) => {
                       if (resource.category.includes('Employ')) {
@@ -89,7 +89,7 @@ const Directory = () => {
                  </div>
             </details>
             <details className="dropdown" >
-                    <summary className="resourceCategory">Housing</summary>
+                    <summary className="resourceCategory"><b>Housing</b></summary>
                         <div className="resourceDiv">
                              {resources.filter((resource, index) => {
                               if (resource.category.includes('Housing')) {
@@ -119,7 +119,7 @@ const Directory = () => {
                         </div>
              </details>
              <details className="dropdown" >
-                     <summary className="resourceCategory">Taxes</summary>
+                     <summary className="resourceCategory"><b>Taxes</b></summary>
                          <div className="resourceDiv">
                               {resources.filter((resource, index) => {
                                if (resource.category.includes('Tax')) {
@@ -149,7 +149,7 @@ const Directory = () => {
                          </div>
               </details>
               <details className="dropdown" >
-                      <summary className="resourceCategory">Medical Care</summary>
+                      <summary className="resourceCategory"><b>Medical Care</b></summary>
                           <div className="resourceDiv">
                                {resources.filter((resource, index) => {
                                 if (resource.category.includes('Medical')) {
@@ -179,7 +179,7 @@ const Directory = () => {
                           </div>
                </details>
                <details className="dropdown" >
-                       <summary className="resourceCategory">Legal Matters</summary>
+                       <summary className="resourceCategory"><b>Legal Matters</b></summary>
                            <div className="resourceDiv">
                                 {resources.filter((resource, index) => {
                                  if (resource.category.includes('Legal')) {
@@ -209,7 +209,7 @@ const Directory = () => {
                            </div>
                 </details>
                 <details className="dropdown" >
-                        <summary className="resourceCategory">Childcare</summary>
+                        <summary className="resourceCategory"><b>Childcare</b></summary>
                             <div className="resourceDiv">
                                  {resources.filter((resource, index) => {
                                   if (resource.category.includes('Child')) {
@@ -239,7 +239,7 @@ const Directory = () => {
                             </div>
                  </details>
                  <details className="dropdown" >
-                         <summary className="resourceCategory">School System</summary>
+                         <summary className="resourceCategory"><b>School System</b></summary>
                              <div className="resourceDiv">
                                   {resources.filter((resource, index) => {
                                    if (resource.category.includes('School')) {
@@ -269,7 +269,7 @@ const Directory = () => {
                              </div>
                   </details>
                   <details className="dropdown" >
-                          <summary className="resourceCategory">Translation & Language Services</summary>
+                          <summary className="resourceCategory"><b>Translation & Language Services</b></summary>
                               <div className="resourceDiv">
                                    {resources.filter((resource, index) => {
                                     if (resource.category.includes('Translation')) {

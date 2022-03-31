@@ -15,8 +15,6 @@ const Navbar = () => {
               </li>
               <li className="navList"><a href= "../pages/forum">Questions? Comments?</a>
               </li>
-              <li className="navList"><a href= "../pages/about">About the Site Administrator</a>
-              </li>
               <li class="navList"><a href="../pages/contact">Contact Admin</a>
               </li>
               <li class="navList"><a href="https://www.google.com/">Safe Exit </a>

@@ -21,20 +21,23 @@ const EditQuestion = (props) => {
         <summary>Click Here to Edit Your Question</summary>
           <br />
         <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Name: </label>
+          <label htmlFor="name">Edit Your Name: </label>
+            <br/>
           <input
             type="text"
             name="name"
             value={question.name}
             onChange={handleChange}/>
             <br />
-          <label htmlFor="question">Question/Comment: </label>
-          <input
-            type="text"
+          <label htmlFor="question">Edit your Question/Comment: </label>
+            <br />
+          <textarea
             name="question"
             value={question.question}
-            onChange={handleChange}/>
-          <input type="submit" />
+            onChange={handleChange}>
+            </textarea>
+              <br />
+          <input className = "submit" type="submit" />
         </form>
       </details>
     </>

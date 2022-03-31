@@ -92,17 +92,17 @@ const Home = (props) => {
   return (
     <>
         <div className = "center">
-          <h2> Welcome! </h2>
-          <p>As a long-term resident of Japan, I would like to share what I have learned through my ups and downs of living in this beautiful country!  </p>
-          <p>I hope the resources you find on this site are informative and allow for smoother transitions and an easier time navigating through life here.</p>
-          <p>-Cara</p>
+          <h2 className = "welcome"> Welcome! </h2>
+          <p className = "welcome">As a long-term resident of Japan, I would like to share what I have learned through my ups and downs of living in this beautiful country!  </p>
+          <p className = "welcome">I hope the resources you find on this site are informative and allow for smoother transitions and an easier time navigating through life here.</p>
+          <p className = "welcome">-Cara</p>
         </div>
-        <div className="search">Search Topic:
+        <div className="search"><b>Search Topic:</b>
         <input placeholder="Enter Query..." className="searchBar"
               onChange={handleQuery} />
         </div>
         {query.length !== 0 && (
-        <div className="resources">
+        <div className="resourcesSearchReturn">
           {query.map((resource) => {
             return (
             <div className="resource" key={resource.id}>
@@ -111,16 +111,12 @@ const Home = (props) => {
             <h5>Subcategory: {resource.subcategory}</h5>
             <h5>Link/URL: {resource.URL}</h5>
             <h5>Description: {resource.description}</h5>
-            <details>
-            <summary>Click Here to Add a Resource Under Category: {resource.category}, Subcategory:{resource.subcategory} </summary>
-           <AddResource handleCreate={handleCreateResource} />
-            </details>
+            ----------------------------
             </div>
            )
           })}
         </div>
       )}
-
     </>
   )
 }

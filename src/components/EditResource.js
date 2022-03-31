@@ -35,7 +35,7 @@ const EditResource = (props) => {
           <br />
           <label htmlFor="description">Description:</label>
           <input type="text" name="description" value={resource.description} onChange={handleChange} />
-          <input type="submit" />
+          <input className = "submit" type="submit" />
         </form>
       </details>
     </>
