@@ -1,3 +1,5 @@
+// The below are variables for fonts, colors and box shadows
+
 $helvetica-font: Helvetica, sans-serif
 $marcellus-font: 'Marcellus', sans-serif
 $very-dark-red: #2e111a
@@ -9,12 +11,17 @@ $pale-green: #ccfdcc
 $div-box-shadow: .5vw .5vw $dark-pink, 1.5vw 1.5vw 1.5vw $jade-green
 $button-box-shadow: .5vw .5vw $dark-pink
 
+// The below is an example of mixins (with the background image settings)
+
 =sakurabackground
  background-image: url("https://i.imgur.com/L9JwPub.png")
  background-size: cover
 
 html
   +sakurabackground
+
+
+// The below is an example of nesting (with media queries)
 
 html, div, form, button, input, textarea, select, option, .submit
   font-family: $marcellus-font
@@ -120,6 +127,9 @@ aside
 
 
 summary, li
+  list-style-type: none
+
+  @media (max-width: 800px)
     list-style-type: none
 
 a, summary:hover

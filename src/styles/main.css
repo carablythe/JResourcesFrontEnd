@@ -133,6 +133,11 @@ aside {
 summary, li {
   list-style-type: none;
 }
+@media (max-width: 800px) {
+  summary, li {
+    list-style-type: none;
+  }
+}
 
 a, summary:hover {
   text-decoration: none;
