@@ -22,7 +22,6 @@ const EditQuestion = (props) => {
           <br />
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Edit Your Name: </label>
-            <br/>
           <input
             type="text"
             name="name"
@@ -40,6 +39,7 @@ const EditQuestion = (props) => {
           <input className = "submit" type="submit" />
         </form>
       </details>
+        <br />
     </>
   )
 }

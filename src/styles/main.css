@@ -3,21 +3,28 @@ html {
   background-size: cover;
 }
 
-.container {
-  display: flex;
-}
-
 html, div, form, button, input, textarea, select, option {
   font-family: "Marcellus", sans-serif;
   color: #2e111a;
   font-size: 2vw;
 }
 
-.header {
-  color: #006432;
-  text-align: center;
-  font-size: 4vw;
+.container {
+  display: flex;
+}
+
+.nav {
+  background-image: url("https://i.imgur.com/L9JwPub.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 18vw;
+  filter: invert(0.8);
+  margin: 0vw 0vw 1vw 0vw;
   padding: 0vw 0vw 0vw 0vw;
+  z-index: 500;
+  box-shadow: 0.5vw 0.5vw #AA104F, 1.5vw 1.5vw 1.5vw #01A66F;
 }
 
 .navList {
@@ -26,81 +33,11 @@ html, div, form, button, input, textarea, select, option {
   font-size: 2.3vw;
 }
 
-.nav {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 18vw;
-  background-image: url("https://i.imgur.com/L9JwPub.png");
-  background-size: cover;
-  filter: invert(0.8);
-  margin: 0vw 0vw 1vw 0vw;
+.header {
+  color: #006432;
+  text-align: center;
+  font-size: 4vw;
   padding: 0vw 0vw 0vw 0vw;
-  z-index: 500;
-  box-shadow: 0.5vw 0.5vw #AA104F, 1.5vw 1.5vw 1.5vw #01A66F;
-}
-
-aside {
-  margin: 18vw 4vw 3vw 0vw;
-}
-
-.directoryMenu {
-  position: relative;
-  width: 40%;
-  background-image: url("https://i.imgur.com/L9JwPub.png");
-  background-size: cover;
-  filter: invert(0.8);
-  padding: 1vw 3vw 5vw 3vw;
-  z-index: 1;
-  box-shadow: 0.5vw 0.5vw #AA104F, 1.5vw 1.5vw 1.5vw #01A66F;
-}
-
-.contact, .forum, .home {
-  width: 115%;
-  padding: 2vw 2vw 2vw 2vw;
-}
-
-summary, li {
-  list-style-type: none;
-}
-
-.resourceSubcategory, .resourceLI {
-  margin-left: -3vw;
-}
-
-a, summary:hover {
-  text-decoration: none;
-  color: #01A66F;
-}
-
-a:hover, .search {
-  color: #AA104F;
-}
-
-button, .submit {
-  background: #ccfdcc;
-  box-shadow: 3px 3px #AA104F;
-}
-
-button:hover, .submit:hover {
-  filter: invert(1);
-}
-
-.clickHere, .searchResults {
-  color: #198450;
-  font-size: 2.3vw;
-}
-
-.clickHere:hover {
-  color: #AA104F;
-}
-
-.directoryTitle, .welcome, .forumTitle, .contactTitle {
-  color: #AA104F;
-}
-
-.posting {
-  font-family: Helvetica, sans-serif;
 }
 
 .Popup {
@@ -118,12 +55,12 @@ button:hover, .submit:hover {
 }
 
 .Popup-inner {
+  background-image: url("https://i.imgur.com/L9JwPub.png");
+  background-size: cover;
   position: fixed;
   padding: 30px 30px 60px 30px;
   width: 100%;
   max-width: 640px;
-  background-image: url("https://i.imgur.com/L9JwPub.png");
-  background-size: cover;
   box-shadow: 0.5vw 0.5vw #AA104F, 1.5vw 1.5vw 1.5vw #01A66F;
 }
 
@@ -131,7 +68,61 @@ button:hover, .submit:hover {
   position: absolute;
   bottom: 16px;
   right: 16px;
-  box-shadow: 3px 3px #AA104F;
+  box-shadow: 0.5vw 0.5vw #AA104F;
+}
+
+aside {
+  margin: 18vw 4vw 3vw 0vw;
+}
+
+.directoryMenu {
+  background-image: url("https://i.imgur.com/L9JwPub.png");
+  background-size: cover;
+  position: relative;
+  width: 40%;
+  filter: invert(0.8);
+  padding: 1vw 3vw 5vw 3vw;
+  z-index: 1;
+}
+
+.resourceSubcategory, .resourceLI {
+  margin-left: -1.5vw;
+}
+
+.contact, .forum, .home {
+  width: 115%;
+  padding: 2vw 2vw 2vw 2vw;
+}
+
+summary, li {
+  list-style-type: none;
+}
+
+a, summary:hover {
+  text-decoration: none;
+  color: #01A66F;
+}
+
+a:hover, .search, .clickHere:hover, .directoryTitle, .welcome, .forumTitle, .contactTitle {
+  color: #AA104F;
+}
+
+button, .submit {
+  background: #ccfdcc;
+  box-shadow: 0.5vw 0.5vw #AA104F;
+}
+
+button:hover, .submit:hover {
+  filter: invert(1);
+}
+
+.clickHere, .searchResults {
+  color: #198450;
+  font-size: 2.3vw;
+}
+
+.posting {
+  font-family: Helvetica, sans-serif;
 }
 
 @media (max-width: 700px) {

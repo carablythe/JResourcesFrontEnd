@@ -19,11 +19,10 @@ const AddQuestion = (props) => {
          <br />
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Your Name:</label>
-          <br/>
         <input type="text" name="name"value={question.name} onChange={handleChange} />
           <br />
         <label htmlFor="question">Your Question/Comment: </label>
-          <br />
+          <br/>
         <textarea name="question" value={question.question} onChange={handleChange}>
         </textarea>
           <br />

@@ -33,3 +33,5 @@ const Contact = () => {
 }
 
 export default Contact
+
+// The above contact tip via formsubmit was learned in this tutorial: https://www.youtube.com/watch?v=r4RQ38EoLds
