@@ -21,8 +21,9 @@ const AddResource = (props) => {
       <h5><em>Keep in mind this site is for information purposes only, so please try to share mainly fact-based resources.</em></h5>
       <form onSubmit={handleSubmit}>
         <label htmlFor="topic">Topic:</label>
+          <br/>
           <input type="text" name="topic" value={resource.topic} onChange={handleChange} />
-            <br />
+          <br/>
         <label htmlFor="category">Category:</label>
           <select className = "option" name="category" value={resource.category} onChange={handleChange}>
             <option className = "option">Immigration</option>
@@ -33,7 +34,7 @@ const AddResource = (props) => {
             <option className = "option">Legal Matters</option>
             <option className = "option">Childcare</option>
             <option className = "option">School System</option>
-            <option className = "option">Translation & Language Services</option>
+            <option className = "option">Translation / Language</option>
           </select>
             <br />
         <label htmlFor="subcategory">Subcategory:</label>

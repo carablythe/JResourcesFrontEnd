@@ -11,9 +11,9 @@ const Navbar = () => {
         <aside className = "nav">
             <h1 className = "header">Life in Japan: Resource Center</h1>
               <ul className= "navbar">
-              <li className="navList"><a href= "/">Homepage</a>
+              <li className="navList"><a href= "/">Home</a>
               </li>
-              <li className="navList"><a href= "../pages/forum">Questions? Comments?</a>
+              <li className="navList"><a href= "../pages/forum">Forum</a>
               </li>
               <li className="navList"><a href="../pages/contact">Contact Admin</a>
               </li>
