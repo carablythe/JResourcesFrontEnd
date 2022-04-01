@@ -11,7 +11,7 @@ const EditQuestion = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    props.handleUpdate(question)
+    props.handleUpdateQuestion(question)
   }
 
 

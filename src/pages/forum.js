@@ -70,9 +70,9 @@ const Forum = () => {
          })}
       </div>
         ----------------------------
-          <br/>
       <AddQuestion handleCreate={handleCreateQuestion} />
       </aside>
+        <br />
     </>
   )
 }
