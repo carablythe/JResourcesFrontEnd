@@ -8,7 +8,7 @@ $jade-green: #01A66F
 $dark-green: #198450
 $super-dark-green: #006432
 $pale-green: #ccfdcc
-$div-box-shadow: .5vw .5vw $dark-pink, 1.5vw 1.5vw 1.5vw $jade-green
+$div-box-shadow: .5vw .5vw $dark-pink, 1.5vw 1.5vw 1.5vw    $jade-green
 $button-box-shadow: .5vw .5vw $dark-pink
 
 // The below is an example of mixins (with the background image settings)
@@ -56,7 +56,7 @@ html, div, form, button, input, textarea, select, option, .submit
   font-size: 2.5vw
 
   @media (max-width: 800px)
-      margin: 0vw 2.5vw 3vw 1vw
+      margin: 0vw 1.5vw 3vw 1.5vw
 
 .header
   color: $super-dark-green
@@ -109,6 +109,7 @@ aside
   filter: invert(.8)
   padding: 1vw 3vw 5vw 3vw
   z-index: 1
+  box-shadow: $div-box-shadow
 
   @media (max-width: 800px)
       width: 40%

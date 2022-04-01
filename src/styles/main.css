@@ -44,7 +44,7 @@ html, div, form, button, input, textarea, select, option, .submit {
 }
 @media (max-width: 800px) {
   .navList {
-    margin: 0vw 2.5vw 3vw 1vw;
+    margin: 0vw 1.5vw 3vw 1.5vw;
   }
 }
 
@@ -109,6 +109,7 @@ aside {
   filter: invert(0.8);
   padding: 1vw 3vw 5vw 3vw;
   z-index: 1;
+  box-shadow: 0.5vw 0.5vw #AA104F, 1.5vw 1.5vw 1.5vw #01A66F;
 }
 @media (max-width: 800px) {
   .directoryMenu {
