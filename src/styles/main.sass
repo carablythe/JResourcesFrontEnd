@@ -38,10 +38,10 @@ html, div, form, button, input, textarea, select, option, .submit
 .nav
   +sakurabackground
   position: absolute
-  text-align: center
   top: 0
   width: 100%
   height: 16vw
+  text-align: center
   filter: invert(.8)
   margin: 0vw 0vw 0vw 0vw
   z-index: 500
@@ -49,6 +49,7 @@ html, div, form, button, input, textarea, select, option, .submit
 
   @media (max-width: 800px)
       height: 20vw
+      text-align: left
 
 .navList
   display: inline
@@ -56,7 +57,8 @@ html, div, form, button, input, textarea, select, option, .submit
   font-size: 2.5vw
 
   @media (max-width: 800px)
-      margin: 0vw 1.5vw 3vw 1.5vw
+    margin: 2vw 0vw 2vw 0vw
+    padding: 2vw 1vw 2vw 2vw
 
 .header
   color: $super-dark-green
@@ -65,7 +67,7 @@ html, div, form, button, input, textarea, select, option, .submit
   margin: 2vw 0vw 2vw 0vw
 
   @media (max-width: 800px)
-        font-size: 5vw
+    font-size: 5vw
 
 .Popup
   position: fixed
@@ -101,6 +103,7 @@ aside
 
   @media (max-width: 800px)
       margin: 19vw 4vw 3vw 0vw
+
 
 .directoryMenu
   +sakurabackground
