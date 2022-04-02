@@ -21,17 +21,16 @@ const EditQuestion = (props) => {
         <summary class = "clickHere"><b>Click Here to Edit Your Question</b></summary>
           <br />
         <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Edit Your Name: </label>
           <input
             type="text"
             name="name"
+            placeholder= "Edit Your Name"
             value={question.name}
             onChange={handleChange}/>
             <br />
-          <label htmlFor="question">Edit your Question/Comment: </label>
-            <br />
           <textarea
             name="question"
+            placeholder= "Edit Your Question/Comment"
             value={question.question}
             onChange={handleChange}>
             </textarea>

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import { useParams } from 'react-router';
 import AddQuestion from '../components/AddQuestion'
 import EditQuestion from '../components/EditQuestion'
 
 const Forum = () => {
-  const [questions, setQuestions] = useState([])
+  const [questions, setQuestions] = useState([]); useParams()
 
 
   const getQuestions = () => {
@@ -55,7 +56,7 @@ const Forum = () => {
     <>
      <aside className = "forum">
       <div className="questions">
-        <h3 className ="forumTitle">Questions? Comments? Post them here:</h3>
+        <h3 className ="forumTitle">Questions? Comments? Please post them here:</h3>
         {questions.map((question) => {
           return (
             <div className="question" key={question.id}>
@@ -65,11 +66,12 @@ const Forum = () => {
             <p className= "posting">{question.question}</p>
             <EditQuestion handleUpdateQuestion={handleUpdateQuestion} id={question.id} />
             <button onClick={handleDeleteQuestion} value={question.id}> Delete Your Question</button>
+            <br />
+            ----------------------------
             </div>
              )
          })}
       </div>
-        ----------------------------
       <AddQuestion handleCreate={handleCreateQuestion} />
       </aside>
         <br />

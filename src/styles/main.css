@@ -108,8 +108,8 @@ aside {
   background-size: cover;
   position: relative;
   width: 40%;
+  padding: 1vw 1vw 1vw 1vw;
   filter: invert(0.8);
-  padding: 1vw 3vw 5vw 3vw;
   z-index: 1;
   box-shadow: 0.5vw 0.5vw #AA104F, 1.5vw 1.5vw 1.5vw #01A66F;
 }
@@ -119,8 +119,40 @@ aside {
   }
 }
 
-.resourceSubcategory, .resourceLI {
+.directoryTitle {
+  margin: 2.7vw 0vw 1vw 1vw;
+}
+@media (max-width: 800px) {
+  .directoryTitle {
+    margin: 4vw 0vw 1vw 1vw;
+  }
+}
+
+.resourceCategory {
   margin-left: -1.5vw;
+}
+@media (max-width: 800px) {
+  .resourceCategory {
+    margin-left: -2.7vw;
+  }
+}
+
+.resourceSubcategory {
+  margin-left: -0.6vw;
+}
+@media (max-width: 800px) {
+  .resourceSubcategory {
+    margin-left: -1.2vw;
+  }
+}
+
+.resourceLI {
+  margin-left: -2vw;
+}
+@media (max-width: 800px) {
+  .resourceLI {
+    margin-left: -3.2vw;
+  }
 }
 
 .contact, .forum, .home {
@@ -133,8 +165,22 @@ aside {
   }
 }
 
+textarea, input, select {
+  width: 55vw;
+}
+@media (max-width: 800px) {
+  textarea, input, select {
+    width: 45vw;
+  }
+}
+
+textarea {
+  height: 15vw;
+}
+
 summary, li {
   list-style-type: none;
+  padding: 0.5vw 0.5vw;
 }
 @media (max-width: 800px) {
   summary, li {

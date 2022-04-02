@@ -18,12 +18,12 @@ const AddQuestion = (props) => {
       <summary class = "clickHere"><b>Click Here to Ask a Question or Add a Comment</b></summary>
          <br />
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Your Name:</label>
-        <input type="text" name="name"value={question.name} onChange={handleChange} />
-          <br />
-        <label htmlFor="question">Your Question/Comment: </label>
+        <input type="text" name="name"
+        placeholder= "Your Name"
+        value={question.name} onChange={handleChange} />
           <br/>
-        <textarea name="question" value={question.question} onChange={handleChange}>
+        <textarea name="question"
+        placeholder= "Your Question/Comment" value={question.question} onChange={handleChange}>
         </textarea>
           <br />
         <input className = "submit" type="submit"/>
