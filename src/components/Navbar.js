@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Popup from './Popup'
-
+import LoginButton from './LoginButton'
+import LogoutButton from './LogoutButton'
 const Navbar = () => {
 
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -11,12 +12,14 @@ const Navbar = () => {
         <aside className = "nav">
             <h1 className = "header">Life in Japan: Resource Center</h1>
               <ul className= "navbar">
-              <li className="navList"><a href= "/">Home</a>
+              <li className="navList"><a href= "/">Home </a>
               </li>
-              <li className="navList"><a href= "../pages/forum">Forum</a>
+              <li className="navList"><a href= "../pages/forum">Forum </a>
               </li>
-              <li className="navList"><a href="../pages/contact">Contact Admin</a>
+              <li className="navList"><a href="../pages/contact">Contact </a>
               </li>
+              <LoginButton/>
+              <LogoutButton/>
               <li className="navList"><a href="https://www.google.com/">Safe Exit </a>
               <button className='safeExitExplanation' onClick={() => setButtonPopup(true)} > What's this? </button>
                     <Popup trigger={buttonPopup} setTrigger= {setButtonPopup}>
