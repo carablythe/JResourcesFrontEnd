@@ -6,7 +6,7 @@ const AddResource = (props) => {
   let emptyResource = { topic: '', category: '', subcategory: '', URL: '', description: '', }
   const [resource, setResource] = useState(emptyResource)
   const [resources, setResources] = useState([])
-  const { user, isAuthenticated } = useAuth0()
+  const { isAuthenticated } = useAuth0()
 
   const getResources = () => {
     axios
