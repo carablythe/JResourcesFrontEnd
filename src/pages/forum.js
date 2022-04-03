@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router';
+import { useParams } from 'react-router'
 import AddQuestion from '../components/AddQuestion'
 import EditQuestion from '../components/EditQuestion'
+import DeleteQuestion from '../components/DeleteQuestion'
 
 const Forum = () => {
   const [questions, setQuestions] = useState([]); useParams()
@@ -40,12 +41,12 @@ const Forum = () => {
 
 
   const handleDeleteQuestion = (event) => {
-    axios
-      .delete('https://japanresources.herokuapp.com/api/forum/' + event.target.value)
-      .then((response) => {
-        getQuestions()
-        })
-      }
+        axios
+          .delete('https://japanresources.herokuapp.com/api/forum/' + event.target.value)
+            .then((response) => {
+              getQuestions()
+                })
+            }
 
   useEffect(() => {
    getQuestions()
@@ -65,7 +66,8 @@ const Forum = () => {
             <h4>Question/Comment:</h4>
             <p className= "posting">{question.question}</p>
             <EditQuestion handleUpdateQuestion={handleUpdateQuestion} id={question.id} />
-            <button onClick={handleDeleteQuestion} value={question.id}> Delete Your Question</button>
+            <br />
+            <DeleteQuestion handleDeleteQuestion={handleDeleteQuestion} id={question.id} />
             <br />
             ----------------------------
             </div>

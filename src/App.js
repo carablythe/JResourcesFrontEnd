@@ -7,12 +7,9 @@ import Directory from './components/Directory'
 import Home from './pages/home'
 import Contact from './pages/contact'
 import Forum from './pages/forum'
-import Login from './pages/login'
-
-
+import UserProfile from './pages/userProfile'
 
 const App = () => {
-
 
   return (
     <>
@@ -25,7 +22,7 @@ const App = () => {
         <Route path="/pages/forum" element={<Forum/>}/>
         <Route path="/pages/contact" element={<Contact/>}/>
         <Route path="/pages/admin" />
-        <Route path="/pages/login" element={<Login/>}/>
+        <Route path="/pages/userProfile" element={<UserProfile/>}/>
       </Routes>
     </Router>
    </div>

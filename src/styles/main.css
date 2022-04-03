@@ -45,7 +45,7 @@ html, div, form, button, input, textarea, select, option, .submit {
 }
 @media (max-width: 800px) {
   .navList {
-    margin: 2vw 0vw 2vw 0vw;
+    margin: 2vw 1vw 2vw 0vw;
     padding: 2vw 0.4vw 2vw 1.5vw;
   }
 }
@@ -133,7 +133,7 @@ aside {
 }
 @media (max-width: 800px) {
   .resourceCategory {
-    margin-left: -2.7vw;
+    margin-left: -2.9vw;
   }
 }
 
@@ -142,7 +142,7 @@ aside {
 }
 @media (max-width: 800px) {
   .resourceSubcategory {
-    margin-left: -1.2vw;
+    margin-left: -1.5vw;
   }
 }
 
@@ -151,16 +151,16 @@ aside {
 }
 @media (max-width: 800px) {
   .resourceLI {
-    margin-left: -3.2vw;
+    margin-left: -3.5vw;
   }
 }
 
-.contact, .forum, .home {
+.contact, .forum, .home, .login {
   width: 115%;
   padding: 2vw 2vw 2vw 2vw;
 }
 @media (max-width: 800px) {
-  .contact, .forum, .home {
+  .contact, .forum, .home, .login {
     width: 60%;
   }
 }
@@ -193,7 +193,7 @@ a, summary:hover {
   color: #01A66F;
 }
 
-a:hover, .search, .clickHere:hover, .directoryTitle, .welcome, .forumTitle, .contactTitle {
+a:hover, .search, .clickHere:hover, .directoryTitle, .welcome, .forumTitle, .contactTitle, .authTitle {
   color: #AA104F;
 }
 
@@ -216,8 +216,8 @@ button:hover, .submit:hover {
 }
 
 @media (max-width: 800px) {
-  .navList, .clickHere, .searchResults, .directoryTitle, .welcome, .forumTitle, .contactTitle, .search {
-    font-size: 3.5vw;
+  .navList, .clickHere, .searchResults, .directoryTitle, .welcome, .forumTitle, .contactTitle, .authTitle, .search {
+    font-size: 3vw;
   }
 }
 

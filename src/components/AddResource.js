@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import { useAuth0 } from "@auth0/auth0-react";
 
 const AddResource = (props) => {
   let emptyResource = { topic: '', category: '', subcategory: '', URL: '', description: '', }
   const [resource, setResource] = useState(emptyResource)
   const [resources, setResources] = useState([])
+  const { user, isAuthenticated } = useAuth0()
 
   const getResources = () => {
     axios
@@ -30,6 +32,7 @@ const AddResource = (props) => {
    }, [])
 
   return (
+      isAuthenticated && (
     <>
     <details>
     <summary class = "clickHere"><b>Click Here to Add a Resource to this Site</b></summary>
@@ -57,7 +60,9 @@ const AddResource = (props) => {
         <input className = "submit" type="submit"/>
       </form>
      </details>
+
     </>
+  ) : null
   )
 }
 
