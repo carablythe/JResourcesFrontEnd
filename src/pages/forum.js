@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router'
+import { useAuth0 } from "@auth0/auth0-react"
 import AddQuestion from '../components/AddQuestion'
 import EditQuestion from '../components/EditQuestion'
-import DeleteQuestion from '../components/DeleteQuestion'
+
 
 const Forum = () => {
   const [questions, setQuestions] = useState([]); useParams()
+  const {isAuthenticated } = useAuth0()
 
 
   const getQuestions = () => {
@@ -67,7 +69,9 @@ const Forum = () => {
             <p className= "posting">{question.question}</p>
             <EditQuestion handleUpdateQuestion={handleUpdateQuestion} id={question.id} />
             <br />
-            <DeleteQuestion handleDeleteQuestion={handleDeleteQuestion} id={question.id} />
+             {isAuthenticated && (
+            <button onClick={handleDeleteQuestion} value={question.id}> Delete Your Question</button>
+            )}
             <br />
             ----------------------------
             </div>
